@@ -26,7 +26,7 @@ steps:
       DeployApp1:
         title: Deploying App 1
         stage: deploy
-        image: codefresh/kubectl
+        image: gcr.io/my-project-56312-343412/nginx@sha256:2468d48e476b6a079eb646e87620f96ce1818ac0c5b3a8450532cea64b3421f4
         working_directory: ./my-nestjs-project/
         commands: 
           - kubectl apply -f deployment.yml service.yml
