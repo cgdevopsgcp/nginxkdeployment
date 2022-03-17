@@ -29,5 +29,5 @@ steps:
         image: codefresh/kubectl
         working_directory: ./my-nestjs-project/
         commands: 
-          - kubectl apply -f service.yml deployment.yml
+          - kubectl apply -f deployment.yml service.yml
 
